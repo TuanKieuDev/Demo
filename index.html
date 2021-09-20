@@ -1,5 +1,5 @@
 <html>
-<body style="background-color: orangered">
+<body style="background-color: blue">
 
 <button>Send post message from web</button>
 <div>Post message log</div>
@@ -16,7 +16,7 @@ document.querySelector("button").onclick = function() {
 }
 
 
-//ios se la window chu khong phai document em khong co ios nen khong test duoc
+//ios se la window.addEvent... em khong co ios nen khong test duoc
 document.addEventListener("message", function(event) {
     console.log("Received post message", event);
 
