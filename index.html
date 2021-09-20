@@ -1,5 +1,5 @@
 <html>
-<body>
+<body style="background-color: red;">
 
 <button>Send post message from web</button>
 <div>Post message log</div>
@@ -15,7 +15,7 @@ document.querySelector("button").onclick = function() {
     window.postMessage("Post message from web", "*");
 }
 
-window.addEventListener("message", function(event) {
+document.addEventListener("message", function(event) {
     console.log("Received post message", event);
 
     logMessage(event.data);
