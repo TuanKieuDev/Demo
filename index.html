@@ -1,5 +1,5 @@
 <html>
-<body style="background-color: yellowgreen">
+<body style="background-color: blue">
 
 <button>Send post message from web</button>
 <div>Post message log</div>
@@ -12,7 +12,7 @@ document.querySelector("button").onclick = function() {
     console.log("Send post message");
 
     logMessage("Sending post message from web..");
-    window.postMessage("Post message from web", "*");
+    (window["ReactNativeWebView"]||window).postMessage("Post message from web", "*");
 }
 
 
